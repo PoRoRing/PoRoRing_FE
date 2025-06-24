@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="앱 설정">
+        <ListPreference
+            app:defaultValue="draw_background"
+            app:entries="@array/my_color"
+            app:entryValues="@array/my_color_values"
+            app:key="color"
+            app:title="배경 색"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="name"
+            app:title="사용자 이름"
+            app:summary="당신의 이름을 입력해주세요"
+            app:defaultValue="Guest"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            app:key="font_size"
+            app:title="결과 글자 크기"
+            app:entries="@array/text_size"
+            app:entryValues="@array/text_size_values"
+            app:summary="결과 글자 크기를 수정할 수 있습니다"
+            app:defaultValue="16"/>
+
+        <ListPreference
+            app:key="font_color"
+            app:title="결과 글자 색깔"
+            app:entries="@array/text_color"
+            app:entryValues="@array/text_color_values"
+            app:summary="결과 글자 색깔을 수정할 수 있습니다"
+            app:defaultValue="#585858"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

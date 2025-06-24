@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_converter"
+    tools:context=".converter.ImageConverterActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kind"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="30dp">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0096D1"
+            android:id="@+id/food"
+            android:textColor="#585858"
+            android:text="식품"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0096D1"
+            android:id="@+id/medicine"
+            android:textColor="#585858"
+            android:text="의약품"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0096D1"
+            android:textColor="#585858"
+            android:id="@+id/beauty"
+            android:text="뷰티 또는 미용제품"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0096D1"
+            android:textColor="#585858"
+            android:id="@+id/doc"
+            android:text="문서"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0096D1"
+            android:textColor="#585858"
+            android:id="@+id/etc"
+            android:text="기타"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/what"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="90dp">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch1"
+            android:textColor="#585858"
+            android:text="이게 무슨 내용인가요?"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch2"
+            android:textColor="#585858"
+            android:text="중요한 부분만 알려줘요"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch3"
+            android:textColor="#585858"
+            android:text="주의해야 할 게 있나요?"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch4"
+            android:textColor="#585858"
+            android:text="내가 먹어도/써도 괜찮은가요?"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch5"
+            android:textColor="#585858"
+            android:text="언제, 어떻게 사용하나요?"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch6"
+            android:textColor="#585858"
+            android:text="전체 내용을 알고싶어요"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/get_result"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/result_button"/>
+
+</LinearLayout>

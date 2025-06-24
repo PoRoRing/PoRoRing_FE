@@ -1,0 +1,36 @@
+<resources>
+    <string-array name="my_color">
+        <item>기본</item>
+        <item>분홍</item>
+        <item>초록</item>
+        <item>노랑</item>
+    </string-array>
+    <string-array name="my_color_values">
+        <item>draw_background</item>
+        <item>bg_pink</item>
+        <item>bg_green</item>
+        <item>bg_yellow</item>
+    </string-array>
+
+    <string-array name="text_color">
+        <item>기본</item>
+        <item>검정</item>
+        <item>파랑</item>
+    </string-array>
+    <string-array name="text_color_values">
+        <item>#585858</item>
+        <item>#000000</item>
+        <item>#0000FF</item>
+    </string-array>
+
+    <string-array name="text_size">
+        <item>크게 (16sp)</item>
+        <item>보통 (15sp)</item>
+        <item>작게 (14sp)</item>
+    </string-array>
+    <string-array name="text_size_values">
+        <item>16</item>
+        <item>15</item>
+        <item>14</item>
+    </string-array>
+</resources>

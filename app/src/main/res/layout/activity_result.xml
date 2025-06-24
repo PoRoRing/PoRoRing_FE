@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".save.ResultActivity"
+    android:background="@drawable/result_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:id="@+id/back_btn"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="34dp"/>
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_height="300dp"
+        android:id="@+id/result_image"
+        android:src="@drawable/no_image"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="39dp"
+        android:id="@+id/speaking"
+        android:src="@drawable/speaking"/>
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="380dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/result_text"
+        android:textStyle="normal"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textSize="16dp"
+        android:textColor="#585858"/>
+
+    <ImageView
+        android:id="@+id/save_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/save_btn"/>
+
+</LinearLayout>

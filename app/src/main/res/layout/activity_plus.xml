@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5pt"
+    android:background="@drawable/basic_background"
+    tools:context=".search.PlusActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="30dp"
+        android:text="홈"
+        android:id="@+id/back_btn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/edtLoc"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:hint="🩵 시작 인덱스를 입력해주세요. 10개씩 보여집니다."
+            android:inputType="number"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:src="@drawable/search_icon"
+            android:id="@+id/btnSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="검색" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_content"
+        android:layout_width="350dp"
+        android:layout_height="760dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
